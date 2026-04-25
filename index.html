@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Air Painter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video id="webcam" autoplay playsinline muted></video>
+  <canvas id="paintCanvas"></canvas>
+  <canvas id="overlay"></canvas>
+
+  <div id="toolbar">
+    <div class="tool-btn active" data-color="#3b82f6" style="--c:#3b82f6" title="Blue"></div>
+    <div class="tool-btn" data-color="#ef4444" style="--c:#ef4444" title="Red"></div>
+    <div class="tool-btn" data-color="#22c55e" style="--c:#22c55e" title="Green"></div>
+    <div class="tool-btn" data-color="#facc15" style="--c:#facc15" title="Yellow"></div>
+    <div class="tool-btn" data-color="#a855f7" style="--c:#a855f7" title="Purple"></div>
+    <div class="toolbar-sep"></div>
+    <div class="tool-btn eraser-btn" data-color="eraser" title="Eraser">⌫</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
